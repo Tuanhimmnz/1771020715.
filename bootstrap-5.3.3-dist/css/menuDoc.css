@@ -1,0 +1,232 @@
+.navbar-custom {
+	background-color: #6c757d; /* Màu sắc nền */
+	border-color: #343a40; /* Màu sắc border */
+}
+.navbar-custom .navbar-brand {
+	color: #ffffff; /* Màu chữ cho Brand */
+}
+.navbar-custom .navbar-nav .nav-link {
+	color: #ffffff; /* Màu chữ cho các link */
+}
+.navbar-custom .navbar-nav .nav-link:hover {
+	color: #ffafaf; /* Màu chữ cho các link khi hover */
+}
+body{
+	cursor: pointer;
+}
+
+
+.item-product{
+	border: 1px solid black;
+	border-radius: 10px;
+	width:auto !important;
+	height: 400px;
+}
+.item-product:hover h4{
+	color: #ffafaf;
+}
+
+
+.promotion {
+	background-color: #f8f9fa; /* Màu nền của bản tin */
+	border: 1px solid #dee2e6; /* Viền của bản tin */
+	border-radius: 5px; /* Bo tròn các góc của bản tin */
+	padding: 20px; /* Khoảng cách padding bên trong bản tin */
+	cursor: pointer; /* Chuyển đổi con trỏ thành hình cửa sổ khi hover */
+	transition: all 0.3s ease; /* Hiệu ứng khi hover */
+}
+.promotion img{
+	width: 150px;
+	height: auto;
+}
+.promotion:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ khi hover */
+	transform: translateY(-5px); /* Di chuyển bản tin lên trên khi hover */
+}
+.promotion:hover .promotion-title{
+	color: #ffafaf;
+}
+.promotion-title {
+	font-size: 24px; /* Kích thước tiêu đề */
+	font-weight: bold; /* Chữ in đậm */
+	margin-bottom: 10px; /* Khoảng cách giữa tiêu đề và nội dung */
+}
+.promotion-text {
+	font-size: 16px; /* Kích thước nội dung */
+}
+
+footer{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+	margin-top: 30px;
+  }
+  .main {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+  }
+  
+  .up {
+	display: flex;
+	flex-direction: row;
+	gap: 0.5em;
+  }
+  
+  .down {
+	display: flex;
+	flex-direction: row;
+	gap: 0.5em;
+  }
+  
+  .card1 {
+	width: 90px;
+	height: 90px;
+	outline: none;
+	border: none;
+	background: white;
+	border-radius: 90px 5px 5px 5px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	transition: .2s ease-in-out;
+  }
+  
+  .instagram {
+	font-size: 20px;
+	margin-top: 1.5em;
+	margin-left: 1.2em;
+	fill: #cc39a4;
+  }
+  
+  .card2 {
+	width: 90px;
+	height: 90px;
+	outline: none;
+	border: none;
+	background: white;
+	border-radius: 5px 90px 5px 5px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	transition: .2s ease-in-out;
+  }
+  
+  .facebook {
+	font-size: 20px;
+	margin-top: 1.5em;
+	margin-left: -.9em;
+	fill: #03A9F4;
+  }
+  
+  .card3 {
+	width: 90px;
+	height: 90px;
+	outline: none;
+	border: none;
+	background: white;
+	border-radius: 5px 5px 5px 90px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	transition: .2s ease-in-out;
+  }
+  
+  .whatsapp {
+	font-size: 20px;
+	margin-top: -.6em;
+	margin-left: 1.2em;
+	fill: #00ff00;
+  }
+  
+  .card4 {
+	width: 90px;
+	height: 90px;
+	outline: none;
+	border: none;
+	background: white;
+	border-radius: 5px 5px 90px 5px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	transition: .2s ease-in-out;
+  }
+  
+  .youtube {
+	font-size: 20px;
+	margin-top: -.9em;
+	margin-left: -1.2em;
+	fill: #f14336;
+  }
+  
+  .card1:hover {
+	cursor: pointer;
+	scale: 1.1;
+	background-color: #cc39a4;
+  }
+  
+  .card1:hover .instagram {
+	fill: white;
+  }
+  
+  .card2:hover {
+	cursor: pointer;
+	scale: 1.1;
+	background-color: #1877f2;
+  }
+  
+  .card2:hover .facebook {
+	fill: white;
+  }
+  
+  .card3:hover {
+	cursor: pointer;
+	scale: 1.1;
+	background-color: #00ff00;
+  }
+  
+  .card3:hover .whatsapp {
+	fill: white;
+  }
+  
+  .card4:hover {
+	cursor: pointer;
+	scale: 1.1;
+	background-color: #FF0004;
+  }
+  
+  .card4:hover .youtube {
+	fill: white;
+  }
+  footer{
+	margin-left: 20px;
+	border-top: #666666 solid 2px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: left;
+  }
+  footer .address{
+	width: max-content;
+	display: block;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+	border-left: #a6a6a6 solid 3px;
+	padding-left: 20px;
+	padding:10px;
+  }
+  footer .address .home{
+	display:flex;
+	align-items: center;
+	margin:10px;
+  }
+  footer .address .home ion-icon{
+	margin-right: 5px;
+  }
+  footer .ho_tro li{
+	list-style: none;
+	margin-bottom: 10px;
+  }
+  
+  footer .ho_tro li a{
+	text-decoration: none;
+	color: #514f4f;
+  }
+  footer .ho_tro li a:hover{
+	color: #ff3f6c;
+  }

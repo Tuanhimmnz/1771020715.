@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script type="text/javascript" language="javascript">
+function layGiaTri(){
+var user="", pass="";
+user=document.getElementById("username").value;
+pass=document.getElementById("password").value;
+if (user==""){
+alert("Bạn không được để trống Username. Nhập lại");
+document.getElementById("username").focus();
+}
+else
+if(pass==""){
+alert("Bạn không được để trống Password. Nhập lại");
+document.getElementById("password").focus();
+}
+else
+if (pass.length<8) {
+alert("Mật khẩu phải từ 8 ký tự trở lên. Nhập lại");
+document.getElementById("password").focus();
+}
+
+else
+if(user=="thangvd9" && pass=="12345678")
+window.location.assign("ip11.html");
+else{
+alert("Bạn nhập sai Username hoặc password. Nhập lại");
+document.getElementById("username").value=""; 
+document.getElementById("password").value="";
+document.getElementById("username").focus();
+}
+</script>
+</head>
+<body>
+<form>
+username: <input type="text" id="username"> <br />
+password: <input type="password" id="password"> <br />
+<input type="button" onclick="layGiaTri();" value="Đăng nhập">
+<p id="ketqua">?</p>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-5.3.3-dist/css/menuDoc.css">
+	<script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<script>
+		if (localStorage.getItem('loggedIn') !== 'true') {
+			window.location.href = 'login.html'; // Chuyển hướng đến trang login.html nếu chưa đăng nhập
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom">
+			<div class="container">
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+				  <li class="nav-item active">
+					<a class="nav-link" href="#">Trang chủ</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Giới thiệu</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Dịch vụ</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="login.html">Đăng nhập / Đăng ký</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </nav>
+		  
+		<div class= "container-fluid">
+        		 <div class= "row">
+					<div class="col-9 bg-white" style="height: 400px;">
+						<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="image/slide1.png" class="d-block w-100" alt="Slide 1" style="height: 400px;">
+								</div>
+								<div class="carousel-item">
+									<img src="image/slide2.jpg" class="d-block w-100" alt="Slide 2" style="height: 400px;">
+								</div>
+								<div class="carousel-item">
+									<img src="image/slide3.jpg" class="d-block w-100" alt="Slide 3" style="height: 400px;">
+								</div>
+								<div class="carousel-item">
+									<img src="image/slide4.jpg" class="d-block w-100" alt="Slide 4" style="height: 400px;">
+								</div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</div>
+           			 <div class ="col-3 bg-white">
+              			 <img src="image\qc1.jpg" style="height: 120px; width: 310px;">
+              			  <img src="image\qc2.jpg" style="height:120px; width: 310px; margin-top: 20px;">
+              			  <img src="image\qc3.jpg" style="height:120px; width: 310px; margin-top: 20px;">
+           			 </div>
+         		</div>
+      	</div>
+        <div class="banner">
+      		<img src="image/banner1.webp" alt="" style="width: 1294px; margin-top:20px;">
+      	</div>
+      	<div class="main" style="margin-top: 40px;">
+      		<div class= "container-fluid">
+   				<div class= "row">
+   					 <div class="box-title_title bg-light text-center" >
+   					 	<h2>Apple</h2>
+   					 </div>
+     					 <div class ="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="margin-top:20px;">
+        					 <div class=" item-product box text-center" data-hover-src = "image/iphone-12.jpg" data-default-src = "image\iphone-13b.jpg">
+        					 		<div class="image">
+        					 			<a href="ip13.html"><img src="image\iphone-13b.jpg" style="width: 200px; height:200px;" alt="iphone13"></a>
+        					 			<h4>iphone13|Chính hãng VNA</h4>
+        					 		</div>
+        					 		<div class="price-c">
+        					 			<p class="price"><s>24.990.000 ₫</s>
+        					 				<br><span class="giamoi">22.490.000 ₫</span>
+        					 			</p>
+        					 		</div>
+									 <script>
+										function thongBaoMuaHangThanhCong() {
+										  alert("Mua hàng thành công! \nCảm ơn bạn đã ủng hộ");
+										}
+										</script>
+        					 		<button type="button"  class="btn btn-danger" onclick="thongBaoMuaHangThanhCong()">Mua Hàng</button>
+        					 		<a href="ip13.html"><button type="button" class="btn btn-light">Sản phẩm</button></a>
+        					 </div>
+    					  </div>
+     					 <div class ="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="margin-top:20px;">
+							<div class=" item-product box text-center" data-hover-src = "image/iphone-12.jpg" data-default-src = "image\iphone11c.jpg">
+        					 		<div class="image">
+        					 			<a href="ip11.html"><img src="image\iphone11c.jpg" style="width: 200px; height:200px;" alt="iphone11"></a>
+        					 			<h4>iphone11|Chính hãng VNA</h4>
+        					 		</div>
+        					 		<div class="price-c">
+        					 			<p class="price"><s>18.000.000 ₫</s>
+        					 				<br><span class="giamoi">16.000.000 ₫</span>
+        					 			</p>
+        					 		</div>
+        					 		<button type="button"  class="btn btn-danger" onclick="thongBaoMuaHangThanhCong()">Mua Hàng</button>
+        					 		<a href="ip11.html"><button type="button" class="btn btn-light">Sản phẩm</button></a>
+        					 </div>
+    					  </div>
+
+    					 <div class ="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="margin-top:20px;">
+							<div class=" item-product box text-center" data-hover-src = "image/iphone-12.jpg" data-default-src = "image\iphone-12f.webp">
+        					 		<div class="image">
+        					 			<a href="ip12.html"><img src="image\iphone-12f.webp" style="width: 200px; height:200px;" alt="iphone12"></a>
+        					 			<h4>iphone12|Chính hãng VNA</h4>
+        					 		</div>
+        					 		<div class="price-c">
+        					 			<p class="price"><s>22.990.000 ₫</s>
+        					 				<br><span class="giamoi">19.490.000 ₫</span>
+        					 			</p>
+        					 		</div>
+        					 		<button type="button"  class="btn btn-danger" onclick="thongBaoMuaHangThanhCong()">Mua Hàng</button>
+        					 		<a href="ip12.html"><button type="button" class="btn btn-light">Sản phẩm</button></a>
+        					 </div>
+    					  </div>
+     					 <div class ="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="margin-top:20px;">
+							<div class=" item-product box text-center" data-hover-src = "image/iphone-12.jpg" data-default-src = "image\iphonexb.jpg">
+        					 		<div class="image">
+        					 			<a href="iphone10.html"><img src="image\iphonexb.jpg" style="width: 200px; height:200px;" alt="iphonex"></a>
+        					 			<h4>iphoneX|Chính hãng VNA</h4>
+        					 		</div>
+        					 		<div class="price-c">
+        					 			<p class="price"><s>11.990.000 ₫</s>
+        					 				<br><span class="giamoi">9.490.000 ₫</span>
+        					 			</p>
+        					 		</div>
+        					 		<button type="button"  class="btn btn-danger" onclick="thongBaoMuaHangThanhCong()">Mua Hàng</button>
+        					 		<a href="iphone10.html"><button type="button" class="btn btn-light">Sản phẩm</button></a>
+        					 </div>
+    					  </div>
+    					  <hr style="margin-top: 15px;">
+
+     					 <div class ="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="margin-top:20px;">
+        					<div class=" item-product box text-center" data-hover-src = "image/iphone-12.jpg" data-default-src = "image\iphone_13-a.jpg">
+        					 		<div class="image">
+        					 			<a href="#"><img src="image\iphone_13-a.jpg" style="width: 200px; height:200px;" alt="samsung"></a>
+        					 			<h4>iphone 13 Pro Max</h4>
+        					 		</div>
+        					 		<div class="price-c">
+        					 			<p class="price"><s>40.990.000 ₫</s>
+        					 				<br><span class="giamoi">36.490.000 ₫</span>
+        					 			</p>
+        					 		</div>
+        					 		<button type="button"  class="btn btn-danger" onclick="thongBaoMuaHangThanhCong()">Mua Hàng</button>
+        					 		<a href="iphone13.html"><button type="button" class="btn btn-light">Sản phẩm</button></a>
+        					 </div>
+    					  </div>
+     					 <div class ="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="margin-top:20px;">
+        					    <div class=" item-product box text-center" data-hover-src = "image/iphone-12.jpg" data-default-src = "image\iphone-12.jpg">
+        					 		<div class="image">
+        					 			<a href="#"><img src="image\iphone-12.jpg" style="width: 200px; height:200px;" alt="iphone11"></a>
+        					 			<h4>iphone 12 Pro Max</h4>
+        					 		</div>
+        					 		<div class="price-c">
+        					 			<p class="price"><s>30.000.000 ₫</s>
+        					 				<br><span class="giamoi">25.000.000 ₫</span>
+        					 			</p>
+        					 		</div>
+        					 		<button type="button"  class="btn btn-danger" onclick="thongBaoMuaHangThanhCong()">Mua Hàng</button>
+        					 		<a href="iphone12promax.html"><button type="button" class="btn btn-light">Sản phẩm</button></a>
+        					 </div>
+    					  </div>
+
+    					 <div class ="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="margin-top:20px;">
+        					     <div class=" item-product box text-center" data-hover-src = "image/iphone-12.jpg" data-default-src = "image\iphone-11.webp">
+        					 		<div class="image">
+        					 			<a href="#"><img src="image\iphone-11.webp" style="width: 200px; height:200px;" alt="iphone12"></a>
+        					 			<h4>iphone 11 Pro Max</h4>
+        					 		</div>
+        					 		<div class="price-c">
+        					 			<p class="price"><s>34.990.000 ₫</s>
+        					 				<br><span class="giamoi">21.490.000 ₫</span>
+        					 			</p>
+        					 		</div>
+        					 		<button type="button"  class="btn btn-danger" onclick="thongBaoMuaHangThanhCong()">Mua Hàng</button>
+        					 		<a href="iphone11.html"><button type="button" class="btn btn-light">Sản phẩm</button></a>
+        					 </div>
+    					  </div>
+     					 <div class ="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="margin-top:20px;">
+								<div class=" item-product box text-center" data-hover-src = "image/iphone-12.jpg" data-default-src = "image\iphone_8.jpg">
+							<div class="image">
+								<a href="#"><img src="image\iphone_8.jpg" style="width: 200px; height:200px;" alt="iphonex"></a>
+								<h4>iphone 8 Plus</h4>
+							</div>
+							<div class="price-c">
+								<p class="price"><s>11.990.000 ₫</s>
+								<br><span class="giamoi">8.490.000 ₫</span>
+								</p>
+							</div>
+							<button type="button"  class="btn btn-danger" onclick="thongBaoMuaHangThanhCong()">Mua Hàng</button>
+							<a href="iphone13.html"><button type="button" class="btn btn-light">Sản phẩm</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+      	<div class= "container-fluid">
+   				<div class= "row">
+   					 <div class="box-title_title bg-light text-center" >
+   					 	<h2><img src="image\samsung.png" style="height:50px;"></h2>
+   					 </div>
+     					 <div class ="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="margin-top:20px;">
+        					<div class=" item-product box text-center" data-hover-src = "image/iphone-12.jpg" data-default-src = "image\a03s.jpg">
+        					 		<div class="image">
+        					 			<a href="iphone13.html"><img src="image\a03s.jpg" style="width: 200px; height:200px;" alt="iphone13"></a>
+        					 			<h4>SamSung Galaxy A03   </h4>
+        					 		</div>
+        					 		<div class="price-c">
+        					 			<p class="price"><s>24.990.000 ₫</s>
+        					 				<br><span class="giamoi">23.490.000 ₫</span>
+        					 			</p>
+        					 		</div>
+        					 		<button type="button"  class="btn btn-danger" onclick="thongBaoMuaHangThanhCong()">Mua Hàng</button>
+        					 		<a href="hidatSamSung.html"><button type="button" class="btn btn-light">Sản phẩm</button></a>
+        					 </div>
+    					  </div>
+     					 <div class ="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="margin-top:20px;">
+        					         					 <div class=" item-product box text-center" data-hover-src = "image/iphone-12.jpg" data-default-src = "image\iphone-13b.jpg">
+        					 		<div class="image">
+        					 			<a href="iphone11.html"><img src="image\a12.jpg" style="width: 200px; height:200px;" alt="iphone11"></a>
+        					 			<h4>SamSung Galaxy A12</h4>
+        					 		</div>
+        					 		<div class="price-c">
+        					 			<p class="price"><s>18.000.000 ₫</s>
+        					 				<br><span class="giamoi">16.000.000 ₫</span>
+        					 			</p>
+        					 		</div>
+        					 		<button type="button"  class="btn btn-danger" onclick="thongBaoMuaHangThanhCong()">Mua Hàng</button>
+        					 		<a href="iphone11.html"><button type="button" class="btn btn-light">Sản phẩm</button></a>
+        					 </div>
+    					  </div>
+
+    					 <div class ="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="margin-top:20px;">
+        					         					 <div class=" item-product box text-center" data-hover-src = "image/iphone-12.jpg" data-default-src = "image\iphone-13b.jpg">
+        					 		<div class="image">
+        					 			<a href="iphone12.html"><img src="image\zfold3.jpg" style="width: 200px; height:200px;" alt="iphone12"></a>
+        					 			<h4>SamSung Z Fold 3</h4>
+        					 		</div>
+        					 		<div class="price-c">
+        					 			<p class="price"><s>22.990.000 ₫</s>
+        					 				<br><span class="giamoi">19.490.000 ₫</span>
+        					 			</p>
+        					 		</div>
+        					 		<button type="button"  class="btn btn-danger" onclick="thongBaoMuaHangThanhCong()">Mua Hàng</button>
+        					 		<a href="iphone12.html"><button type="button" class="btn btn-light">Sản phẩm</button></a>
+        					 </div>
+    					  </div>
+     					 <div class ="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="margin-top:20px;">
+        					         					 <div class=" item-product box text-center" data-hover-src = "image/iphone-12.jpg" data-default-src = "image\iphone-13b.jpg">
+        					 		<div class="image">
+        					 			<a href="C:\Users\nguye\Desktop\baitap\iphone10.html"><img src="image\f20fe.jpg" style="width: 200px; height:200px;" alt="iphonex"></a>
+        					 			<h4>SamSung  S20 FE</h4>
+        					 		</div>
+        					 		<div class="price-c">
+        					 			<p class="price"><s>11.990.000 ₫</s>
+        					 				<br><span class="giamoi">9.490.000 ₫</span>
+        					 			</p>
+        					 		</div>
+        					 		<button type="button"  class="btn btn-danger" onclick="thongBaoMuaHangThanhCong()">Mua Hàng</button>
+        					 		<a href="iphone10.html"><button type="button" class="btn btn-light">Sản phẩm</button></a>
+        					 </div>
+    					  </div>
+    					  <hr style="margin-top: 15px;">
+
+     					 <div class ="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="margin-top:20px;">
+        					         					 <div class=" item-product box text-center" data-hover-src = "image/iphone-12.jpg" data-default-src = "image\iphone-13b.jpg">
+        					 		<div class="image">
+        					 			<a href="#"><img src="image\zflip.webp" style="width: 200px; height:200px;" alt="samsung"></a>
+        					 			<h4>SamSung Galaxy Z Flip</h4>
+        					 		</div>
+        					 		<div class="price-c">
+        					 			<p class="price"><s>40.990.000 ₫</s>
+        					 				<br><span class="giamoi">36.490.000 ₫</span>
+        					 			</p>
+        					 		</div>
+        					 		<button type="button"  class="btn btn-danger" onclick="thongBaoMuaHangThanhCong()">Mua Hàng</button>
+        					 		<a href="iphone13.html"><button type="button" class="btn btn-light">Sản phẩm</button></a>
+        					 </div>
+    					  </div>
+     					 <div class ="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="margin-top:20px;">
+        					         					 <div class=" item-product box text-center" data-hover-src = "image/iphone-12.jpg" data-default-src = "image\iphone-13b.jpg">
+        					 		<div class="image">
+        					 			<a href="#"><img src="image\sss1.jpg" style="width: 200px; height:200px;" alt="iphone11"></a>
+        					 			<h4>SamSung S20 Ultra</h4>
+        					 		</div>
+        					 		<div class="price-c">
+        					 			<p class="price"><s>30.000.000 ₫</s>
+        					 				<br><span class="giamoi">25.000.000 ₫</span>
+        					 			</p>
+        					 		</div>
+        					 		<button type="button"  class="btn btn-danger" onclick="thongBaoMuaHangThanhCong()">Mua Hàng</button>>
+        					 		<a href="iphone11.html"><button type="button" class="btn btn-light">Sản phẩm</button></a>
+        					 </div>
+    					  </div>
+
+    					 <div class ="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="margin-top:20px;">
+        					         					 <div class=" item-product box text-center" data-hover-src = "image/iphone-12.jpg" data-default-src = "image\iphone-13b.jpg">
+        					 		<div class="image">
+        					 			<a href="#"><img src="image\ssn1.jpg" style="width: 200px; height:200px;" alt="iphone12"></a>
+        					 			<h4>SamSung  Note 20Ultra</h4>
+        					 		</div>
+        					 		<div class="price-c">
+        					 			<p class="price"><s>34.990.000 ₫</s>
+        					 				<br><span class="giamoi">21.490.000 ₫</span>
+        					 			</p>
+        					 		</div>
+									 <button type="button"  class="btn btn-danger" onclick="thongBaoMuaHangThanhCong()">Mua Hàng</button>
+        					 		<a href="iphone13.html"><button type="button" class="btn btn-light">Sản phẩm</button></a>
+        					 </div>
+    					  </div>
+     					 <div class ="col-md-3 col-sm-6 col-xs-6 wow fadeInUp" style="margin-top:20px;">
+        					         					 <div class=" item-product box text-center" data-hover-src = "image/iphone-12.jpg" data-default-src = "image\iphone-13b.jpg">
+        					 		<div class="image">
+        					 			<a href="#"><img src="image\a52s.webp" style="width: 200px; height:200px;" alt="iphonex"></a>
+        					 			<h4>iphone 8 Plus</h4>
+        					 		</div>
+        					 		<div class="price-c">
+        					 			<p class="price"><s>11.990.000 ₫</s>
+        					 				<br><span class="giamoi">8.490.000 ₫</span>
+        					 			</p>
+        					 		</div>
+									 <button type="button"  class="btn btn-danger" onclick="thongBaoMuaHangThanhCong()">Mua Hàng</button>
+        					 		<a href="iphone13.html"><button type="button" class="btn btn-light">Sản phẩm</button></a>
+        					 </div>
+    					  </div>
+    				</div>	
+      			</div>
+			</div>
+		</div>
+		<div class="container mt-5 box_news">
+			<h1>Tin tức mới nhất</h1>
+			<!-- Bản tin khuyến mãi -->
+			<div class="row">
+			  <div class="col-md-6 offset-md-3">
+				<!-- Bản tin khuyến mãi 1 -->
+				<div class="promotion box" id="promotion1" data-hover-src="image/zfold3.jpg" data-default-src="image/f20fe.jpg">
+				  <div class="promotion-title">Khuyến mãi đặc biệt!</div>
+				  <img src="image/f20fe.jpg" class="img-fluid mb-3" alt="Promotion Image">
+				  <div class="promotion-text">Chỉ hôm nay! Giảm giá 20% cho tất cả sản phẩm. Nhanh tay mua ngay!</div>
+				</div>
+				<!-- Bản tin khuyến mãi 2 -->
+				<div class="promotion box mt-4" id="promotion2" data-hover-src="image/xm3.webp" data-default-src="image/qc2.jpg">
+				  <div class="promotion-title">Chương trình giảm giá lớn!</div>
+				  <img src="image/qc2.jpg" class="img-fluid mb-3" alt="Promotion Image">
+				  <div class="promotion-text">Giảm giá 50% cho các mặt hàng mới. Không thể bỏ qua cơ hội này!</div>
+				</div>
+			  </div>
+			</div>
+		</div>
+		<footer>
+			<div class="main">
+				<div class="up">
+				  <button class="card1">
+					<ion-icon name="logo-instagram" class = "instagram"></ion-icon>
+				  </button>
+				  <button class="card2">
+					<a href="https://www.facebook.com/thinne002"><ion-icon name="logo-facebook" class = "facebook" ></ion-icon></a>
+				  </button>
+				</div>
+				<div class="down">
+				  <button class="card3">
+					<ion-icon name="logo-whatsapp" class = "whatsapp"></ion-icon>
+				  </button>
+				  <button class="card4">
+					<ion-icon name="logo-youtube" class = "youtube"></ion-icon>
+				  </button>
+				</div>
+			  </div>
+			<div class="address">
+				<div class="home">
+					<ion-icon name="business"></ion-icon>
+					<p>Dương Trọng Tuấn</p>
+				</div>
+				<div class="home">
+					<ion-icon name="mail"></ion-icon>
+					<a href = "https://mail.google.com/mail/u/0/#inbox">hihituannee@gmail.com</a>
+				</div>
+				<div class="home">
+					<ion-icon name="call"></ion-icon>
+					<p>0328992004</p>
+				</div>
+			</div>
+			<div class="ho_tro">
+				<p>Hỗ trợ khách hàng</p>
+				<li><a href="#big-home">Trang chủ</a></li>
+				<li><a href="">Giới thiệu</a></li>
+				<li><a href="#products">Sản phẩm</a></li>
+				<li><a href="">Tin tức</a></li>
+				<li><a href="">Liên hệ</a></li>
+			</div>
+			<div class="open_door">
+				<p>Mở cửa</p>
+				<p>Từ 9:00 - 21:30 tất cả các ngày trong tuần (bao gồm cả các ngày lễ, ngày Tết).</p>
+				<p>Góp ý khiếu nại</p>
+				<p>1900 1050</p>
+			</div>
+			<div class="feed-back">
+				
+			</div>
+		</footer>
+<script src = "index.js"></script>
+<script type="text/javascript" src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
